@@ -111,87 +111,6 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: #ffbd39; /* Purple Line */
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  padding: 20px 30px;
-  position: relative;
-  width: 50%;
-}
-
-.timeline-item.left {
-  left: 0;
-}
-
-.timeline-item.right {
-  left: 50%;
-}
-
-.timeline-content {
-  padding: 20px 30px;
-  background-color: #1a1a1a; /* Dark card background */
-  color: white;
-  border-radius: 8px;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-  right: -10px;
-  background-color: #ffbd39;
-  border: 3px solid white;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item.right::before {
-  left: -10px;
-  right: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .timeline::after {
-    left: 90px;
-  }
-  
-  .timeline-item {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .timeline-item.right,
-  .timeline-item.left {
-    left: 0%;
-  }
-  
-  .timeline-item.right::before,
-  .timeline-item.left::before {
-    left: 60px;
-  }
-}
 </style>
 
 
@@ -404,88 +323,92 @@
 			<h1 class="big-4">Experience</h1>
 			<div class="underline"></div>
 		</div>
-		<section id="timeline-section" class="ftco-section">
-			<div class="container">
-			  <div class="timeline">
-					
-				<div class="timeline-item right">
-					<div class="timeline-content">
-					  <h2>Junior Machine Learning Engineer</h2>
-					  <p><strong>1st Ranking Technologies, TX</strong></p>
-					  <p>Feb 2025 – Present</p>
-					  <ul>
-						<li>Contributed to the development, fine-tuning, and deployment of machine learning models using sci-kit-learn, TensorFlow, and PyTorch, focusing on classification and regression tasks, data preprocessing, and feature selection to improve model accuracy and reduce processing time.</li>
-						<li>Assisted in building and automating model training workflows with ClearML, streamlining data cleaning, feature engineering, and dataset optimization to improve model performance and reduce manual intervention by 40%.</li>
-						<li>Supported model evaluation and performance tuning through cross-validation, hyperparameter tuning, and performance metrics like accuracy, precision, recall, and F1-score, ensuring a 98% model robustness for production deployment.</li>
-					  </ul>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<h2>Junior Machine Learning Engineer</h2>
+						<span class="position"><p>1st Ranking Technologies, TX</p></span>
+						<span class="date"><p>Feb 2025 – Present</p></span>
+						<ul>
+							<li>Contributed to the development, fine-tuning, and deployment of machine learning models using sci-kit-learn, TensorFlow, and PyTorch, focusing on classification and regression tasks, data preprocessing, and feature selection to improve model accuracy and reduce processing time.</li>
+							<li>Assisted in building and automating model training workflows with ClearML, streamlining data cleaning, feature engineering, and dataset optimization to improve model performance and reduce manual intervention by 40%.</li>
+							<li>Supported model evaluation and performance tuning through cross-validation, hyperparameter tuning, and performance metrics like accuracy, precision, recall, and F1-score, ensuring a 98% model robustness for production deployment.</li>
+					  	</ul>
+						</p>
 					</div>
-				  </div>
-			
-		  
-				<div class="timeline-item left">
-				  <div class="timeline-content">
-					<h2>Intern Software Programmer I</h2>
-					<p><strong>Marlabs LLC, NJ</strong></p>
-					<p>Feb 2024 – Feb 2025</p>
-					<ul>
-						<li>Implemented a robust Microservices Architecture using Spring Boot and Spring Cloud to promote loose coupling and independence within the application.</li>
-						<li>Configured Spring Security to manage access permissions, integrating OAuth2 SSO (Single Sign-On) Social Login with Google and Facebook, which reduced unauthorized access by 50%.</li>
-						<li>Established middleware persistence with Hibernate, mapping Java classes to MySQL 8.0 tables using Hibernate Query Language (HQL) and primary queries.</li>
-						<li>Improved API efficiency by 25% by implementing service discovery and registration using Eureka Server and Client, employing Ribbon for client-side load balancing, utilizing Zuul to create an API gateway for intelligent routing, and integrating Hystrix as a circuit breaker to enable fallback methods.</li>
-						<li>Implemented messaging services via Apache Kafka for producing and asynchronously consuming messages within the application.</li>
-						<li>Contributed to front-end development with ReactJS, Bootstrap, HTML5, and CSS3, ensuring a seamless user experience.</li>
-						<li>Employed Test-Driven Development with JUnit 5, versioned code using GIT, and utilized Jenkins for Continuous Integration and Deployment.</li>
-						
-					</ul>
-				  </div>
+
 				</div>
-		  
-				<div class="timeline-item right">
-				  <div class="timeline-content">
-					<h2>Graduate Teaching Assistant (ML)</h2>
-					<p><strong>Cleveland State University, OH</strong></p>
-					<p>July 2023 – Dec 2023</p>
-					<ul>
-						<li>Conducted instructional sessions on core Machine Learning concepts, utilizing Python, TensorFlow, and sci-kit-learn to design and deliver hands-on coding labs, assignments, and real-world projects leading to a 20% improvement in student assessment scores.</li>
-						<li>Proficient in implementing supervised and unsupervised learning algorithms with a focus on model training, hyperparameter tuning, and performance evaluation metrics.</li>
-						<li>Facilitated student success through dedicated office hours, providing personalized guidance on coursework, debugging Python code, optimizing ML models, and offering support in feature engineering, data preprocessing, and cross-validation techniques, and collaborated with faculty to develop and distribute academic resources.</li>
-					</ul>
-				  </div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<h2>Intern Software Programmer I</h2>
+						<span class="position"><p>Marlabs LLC, NJ</p></span>
+						<span class="date"><p>Feb 2024 – Feb 2025</p></span>
+						<ul>
+							<li>Implemented a robust Microservices Architecture using Spring Boot and Spring Cloud to promote loose coupling and independence within the application.</li>
+							<li>Configured Spring Security to manage access permissions, integrating OAuth2 SSO (Single Sign-On) Social Login with Google and Facebook, which reduced unauthorized access by 50%.</li>
+							<li>Established middleware persistence with Hibernate, mapping Java classes to MySQL 8.0 tables using Hibernate Query Language (HQL) and primary queries.</li>
+							<li>Improved API efficiency by 25% by implementing service discovery and registration using Eureka Server and Client, employing Ribbon for client-side load balancing, utilizing Zuul to create an API gateway for intelligent routing, and integrating Hystrix as a circuit breaker to enable fallback methods.</li>
+							<li>Implemented messaging services via Apache Kafka for producing and asynchronously consuming messages within the application.</li>
+							<li>Contributed to front-end development with ReactJS, Bootstrap, HTML5, and CSS3, ensuring a seamless user experience.</li>
+							<li>Employed Test-Driven Development with JUnit 5, versioned code using GIT, and utilized Jenkins for Continuous Integration and Deployment.</li>
+							
+						</ul>
+						</p>
+					</div>
 				</div>
-		  
-				<div class="timeline-item left">
-				  <div class="timeline-content">
-					<h2>Software Engineer Intern</h2>
-					<p><strong>Enlighten Infosystem, India</strong></p>
-					<p>Sept 2020 – Feb 2021</p>
-					<ul>
-						<li>Architected microservices application using Spring MVC and Spring Boot, integrated with React 17.0 for a responsive single-page application (SPA).</li>
-						<li>Implemented authentication with OAuth 2.0 and JWT, utilized Spring Cloud and Netflix OSS stack for microservices and developed alert notification service using Apache Kafka.</li>
-						<li>Practiced Test-Driven Development (TDD) with JUnit5, orchestrated Docker image creation and deployment on AWS ECS, which improved system scalability and uptime to 99.5%, and managed project iteration planning within Agile methodology using Git and JIRA.</li>
-					</ul>
-				  </div>
-				</div>
-		  
-				<div class="timeline-item right">
-				  <div class="timeline-content">
-					<h2>Software Developer</h2>
-					<p><strong>Spectra Computer - S.K Infosoft, India</strong></p>
-					<p>July 2019 – Aug 2020</p>
-					<ul>
-						<li>Integrated IoT technology into a smart walking hardware device, utilizing Infrared and Ultrasonic sensors for obstacle detection, and a GPRS modem supports SMS service, enhancing the device's capability for real-time communication.</li>
-						<li>Developed RESTful APIs with Spring MVC and Spring Boot, which reduced data exchange latency by 30% and Improved asynchronous communication efficiency by 40% by configuring microservices with Apache Kafka for asynchronous communication, and employed Hibernate and Spring Data JPA for data persistence in MySQL database, optimizing performance and ensuring consistency.</li>
-						<li>Contributed to cross-browser webpage design and development using HTML5, CSS3, JavaScript, jQuery, and Thymeleaf as the templating framework.</li>
-						<li>Employed Maven for the efficient management of application dependencies, and JIRA for comprehensive issue tracking and application monitoring.</li>
-					</ul>
-				  </div>
-				</div>
-		  
-			  </div>
-			</div>
-		  </section>
+
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<h2>Graduate Teaching Assistant (ML)</h2>
+							<span class="position"><p>Cleveland State University, OH</p></span>
+							<span class="date"><p>July 2023 – Dec 2023</p></span>
+							<ul>
+								<li>Conducted instructional sessions on core Machine Learning concepts, utilizing Python, TensorFlow, and sci-kit-learn to design and deliver hands-on coding labs, assignments, and real-world projects leading to a 20% improvement in student assessment scores.</li>
+								<li>Proficient in implementing supervised and unsupervised learning algorithms with a focus on model training, hyperparameter tuning, and performance evaluation metrics.</li>
+								<li>Facilitated student success through dedicated office hours, providing personalized guidance on coursework, debugging Python code, optimizing ML models, and offering support in feature engineering, data preprocessing, and cross-validation techniques, and collaborated with faculty to develop and distribute academic resources.</li>
+							</ul>
+							</p>
+						</div>
+					</div>
+
+						<div class="col-md-6">
+							<div class="resume-wrap ftco-animate">
+								<h2>Software Engineer Intern</h2>
+								<span class="position"><p>Enlighten Infosystem, India</p></span>
+								<span class="date"><p>Sept 2020 – Feb 2021</p></span>
+								<ul>
+									<li>Architected microservices application using Spring MVC and Spring Boot, integrated with React 17.0 for a responsive single-page application (SPA).</li>
+									<li>Implemented authentication with OAuth 2.0 and JWT, utilized Spring Cloud and Netflix OSS stack for microservices and developed alert notification service using Apache Kafka.</li>
+									<li>Practiced Test-Driven Development (TDD) with JUnit5, orchestrated Docker image creation and deployment on AWS ECS, which improved system scalability and uptime to 99.5%, and managed project iteration planning within Agile methodology using Git and JIRA.</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+
+							<div class="col-md-6">
+								<div class="resume-wrap ftco-animate">
+									<h2>Software Developer</h2>
+									<span class="position"><p>Spectra Computer - S.K Infosoft, India</p></span>
+									<span class="date"><p>July 2019 – Aug 2020</p></span>
+									<ul>
+										<li>Integrated IoT technology into a smart walking hardware device, utilizing Infrared and Ultrasonic sensors for obstacle detection, and a GPRS modem supports SMS service, enhancing the device's capability for real-time communication.</li>
+										<li>Developed RESTful APIs with Spring MVC and Spring Boot, which reduced data exchange latency by 30% and Improved asynchronous communication efficiency by 40% by configuring microservices with Apache Kafka for asynchronous communication, and employed Hibernate and Spring Data JPA for data persistence in MySQL database, optimizing performance and ensuring consistency.</li>
+										<li>Contributed to cross-browser webpage design and development using HTML5, CSS3, JavaScript, jQuery, and Thymeleaf as the templating framework.</li>
+										<li>Employed Maven for the efficient management of application dependencies, and JIRA for comprehensive issue tracking and application monitoring.</li>
+									</ul>
+									</p>
+								</div>
+							</div>
+				
+			</div> 
 
 		<br>
 		<br>
+		  </section>
+
 
 		<div class="row">
 			<h1 class="big-4">Education</h1>
